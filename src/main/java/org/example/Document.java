@@ -16,6 +16,8 @@ public class Document {
         this.owner = user;
         this.readAccess = new HashMap<>();
         this.writeAccess = new HashMap<>();
+        readAccess.put(this.owner.getId(), 1);
+        writeAccess.put(this.owner.getId(), 1);
         this.name = name;
         id = curId++;
         content = "";
@@ -24,9 +26,14 @@ public class Document {
         readAccess.put(user.getId(), 1);
         return true;
     }
-    public void addContent(String content, User user){
-        if(writeAccess.containsKey(user.getId()))
+    public String addContent(String content, User user){
+        if(writeAccess.containsKey(user.getId())) {
             this.content += content;
+            return "Content added to file";
+        }
+        else{
+            return "Unauthorized Access";
+        }
     }
     public String getContent(User user){
         if(readAccess.containsKey(user.getId())){

@@ -23,6 +23,7 @@ public class Main {
 
         Document doc1 = user1.createDocument("First Document");
         Document doc2 = user1.createDocument("Second Document");
-
+        doc1.addContent("New Name", user1);
+        System.out.println(doc1.addContent("New File", user2));
     }
 }
