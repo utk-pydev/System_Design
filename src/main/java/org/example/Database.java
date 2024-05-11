@@ -13,7 +13,7 @@ public class Database {
         this.name = name;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
-        tableHashMap = new HashMap<>();
+        this.tableHashMap = new HashMap<>();
     }
 
     public Table createTable(String name, String createdAt, String updatedAt){
