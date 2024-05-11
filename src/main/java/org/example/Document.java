@@ -8,6 +8,7 @@ public class Document {
 
     private static int curId = 1;
     private int id;
+    private int totalCountUsed ;
     private String name, content;
     private User owner;
     private HashMap<Integer, Integer>readAccess;
@@ -46,5 +47,8 @@ public class Document {
     }
     public int getId(){
         return id;
+    }
+    public void printMap(){
+        readAccess.forEach((k, v)->System.out.println(k+v));
     }
 }
