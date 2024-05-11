@@ -1,6 +1,4 @@
 import Model.*;
-import com.sun.tools.javac.util.List;
-import com.sun.tools.javac.util.Pair;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -18,6 +16,7 @@ public class TicTacToeGame {
         players.add(player2);
         gameBoard = new Board(3);
     }
+    /*
     public String startGame(){
         boolean noWinner = true;
         while (noWinner){
@@ -84,5 +83,5 @@ public class TicTacToeGame {
 
         return rowMatch||columnMatch||diagonalMatch||antiDiagonalMatch;
     }
-
+*/
 }

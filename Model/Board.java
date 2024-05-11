@@ -2,8 +2,6 @@ package Model;
 
 //i+mport com.sun.tools.javac.util.Pair;
 
-import com.sun.tools.javac.util.Pair;
-
 import java.util.ArrayList;
 import java.util.List;
 public class Board {
@@ -23,6 +21,7 @@ public class Board {
         board[row][column] = playingPiece;
         return  true;
     }
+/*
     public List<Pair<Integer, Integer>> getFreeCells(){
         List<Pair<Integer, Integer>> freeCells = new ArrayList<>();
 
@@ -51,4 +50,5 @@ public class Board {
             System.out.println();
         }
     }
+ */
 }
