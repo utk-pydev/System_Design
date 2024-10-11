@@ -2,15 +2,17 @@ package com.example.book_my_show.Models;
 
 import lombok.*;
 
+import java.util.Date;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Builder
 @Setter
 public class Show {
-    private int id;
+    private String id;
     private Movie movie;
     private Screen screen;
-    private int startTime;
-    private int endTime;
+    private Date startTime;
+    private Date endTime;
 }
